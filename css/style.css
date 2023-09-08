@@ -1,0 +1,279 @@
+section{
+  width: 80%;
+  height: 1000px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.container{
+  width: 1400px;
+  margin: 0 auto;
+}
+.animation{
+  display: flex;
+align-items: center; 
+margin-top: 400px;
+margin-top: 200px;
+}
+.line {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color:white;
+  border-radius: 50%;
+  border-left: 2px solid black;
+  animation: spin 1s infinite linear;
+display: flex;
+}
+
+
+.inline {
+  width: 180px;
+  height: 180px;
+  transform: translate(-50%, -50,-50%,-50% );
+  background-color: white;
+  border-radius: 50%;
+  border-left: 2px solid black;
+  animation: spins 1s infinite linear;
+  display: flex;
+margin-top: 20px;
+margin: auto;
+  
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes spins {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-760deg);
+  }
+
+/* 2-aylana */
+
+
+}.box {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+  border-radius: 50%;
+  border: 1px solid black;
+  overflow: hidden;
+  animation: rotate 1s infinite linear;
+  margin-left: 29px;
+}
+
+.inner_box {
+  animation-name: inbox;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  border: 1px solid black;
+  animation-delay: line;
+  animation-direction: 1s;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes inbox {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(150px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.animatsiya_div {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  animation-timing-function: linear;
+  animation: kichayibKattalashtirish 1s infinite alternate;
+  display: flex;
+  opacity: 0.8;
+  margin-left: 20px;
+
+}
+
+@keyframes kichayibKattalashtirish {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animatsiya_div2 {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px dotted rgba(0, 0, 0, 0.361);
+    animation: kattayibKichaytirish 1s infinite alternate;
+  margin: auto;
+  opacity: 0.8;
+}
+
+@keyframes kattayibKichaytirish {
+  0% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(0.2);
+  }
+}
+
+
+
+
+/* animatsiya ochib yonish */
+
+
+
+.animatsiya_boss1 {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  animation-name: aylana1;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  display: flex;
+  margin-left: 20px;
+}
+
+@keyframes aylana1 {
+  0% {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  100% {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    opacity: 0.1;
+  }
+}
+
+.animatsiya_boss2 {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  animation-name: aylana2;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  margin: auto;
+  display: flex;
+}
+
+@keyframes aylana2 {
+  0% {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height:50px;
+  }
+  25%{
+    border: dotted black;
+    width: 75px;
+    height: 75px;
+    opacity: 0.3;
+  }
+  50%{
+    border: solid black;
+    width: 100px;
+    height: 100px;
+  }
+  100% {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 150px;
+    height:150px;
+    opacity: 0.3;
+  }
+}
+
+.div {
+  width: 120px;
+  height: 120px;
+  border: 50px solid black;
+  border-radius: 50%;
+  animation-name: naw;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  margin-left: 20px;
+}
+
+@keyframes naw {
+ 
+  25% {
+    border-top-color: white;
+    border-left-color: black;
+    border-bottom-color: black;
+    border-right-color: black;
+  }
+  50% {
+    border-top-color: black;
+    border-left-color: black;
+    border-bottom-color: black;
+    border-right-color: white;
+  }
+  75% {
+    border-top-color: black;
+    border-left-color: black;
+    border-bottom-color: white;
+    border-right-color: black;
+  }
+  100% {
+    border-top-color: black;
+    border-left-color: white;
+    border-bottom-color: black;
+    border-right-color: black;
+  }
+ }
+.div1{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid black;
+} 
+

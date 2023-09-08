@@ -1,0 +1,190 @@
+Animatsiya nomi (animation-name): Animatsiya nomi, keyingi qadamda ishlatiladigan keyingi animatsiyani belgilayadi.
+
+Davom etish vaqti (animation-duration): Animatsiyani boshidan oxirigacha qancha vaqt ichida davom ettirish kerakligini belgilayadi.
+
+Davom etish turi (animation-timing-function): Animatsiya jarayonida obyektni harakatlanish tezligini va boshqarishni belgilayadi. Ba'zi umumiy davom etish turlari: linear (to'g'ri chizg'icha o'zgarish), ease (boshida tez, keyin yavaşlanish), ease-in (boshida tezlanish), ease-out (oxirida tezlanish), ease-in-out (boshida va oxirida tezlanish), va boshqalar.
+
+Keyingi animatsiya (animation-fill-mode): Animatsiya tugaganidan so'ng obyektning qayerga o'tishi kerakligini belgilayadi. Ba'zi umumiy parametrlar: none (standart holat, obyekt boshlang'ich joyiga qaytadi), forwards (animatsiya tugagan holatni saqlayadi), backwards (animatsiya boshlangan holatni saqlayadi), both (animatsiya boshlangan va tugagan holatlarni saqlayadi).
+
+Animatsiya chegarasi (animation-iteration-count): Animatsiyani qancha marta takrorlash kerakligini belgilayadi. infinite qiymati bilan animatsiya chegarasiz takrorlanadi.
+
+Boshlanish tungi vaqti (animation-delay): Animatsiya boshlanishidan oldin o'tkazilishi kerak bo'lgan vaqt.
+
+Animatsiya yo'nalishi (animation-direction): Animatsiyani boshidan oxiriga yoki oxiridan boshiga ijro etishni belgilayadi. Umumiy yo'nalishlar: normal (boshdan oxiriga), reverse (oxiridan boshiga), alternate (boshsidan oxiriga va oxiridan boshiga), alternate-reverse (oxiridan boshiga va boshdan oxiriga).
+
+Animatsiya holati (animation-play-state): Animatsiyani to'xtatish yoki davom ettirishni belgilayadi. paused holatida animatsiya to'xtatiladi, running holatida davom etadi.
+Animatsiya kulrangligi (animation-fill-color): Animatsiya davom etishida obyektning kulrangligini belgilayadi. Misol uchun, red, #00ff00 (yashil), rgba(255, 0, 0, 0.5) (yarimurchak qizil), va hokazo.
+
+Obyektning o'lchami va hajmi (animation-scale): Animatsiya davom etishida obyektning o'lchamini va hajmini belgilayadi. Misol uchun, scale(1.2) (20% o'lchamni kattalashtiradi), scaleX(2) (x o'qi bo'yicha o'lchamni ikki marta kattalashtiradi), scaleY(0.5) (y o'qi bo'yicha o'lchamni yarimlashtiradi), va hokazo.
+
+Obyektning qaytish effekti (animation-iteration-count): Animatsiya yakunlandiktan so'ng obyektning qaytish effektini belgilayadi. Misol uchun, animation-iteration-count: infinite; obyekt to'g'ri chizg'ichada takrorlanadi.
+
+Obyektning opaqlik darajasini (animation-opacity): Animatsiya davom etishida obyektning opaqlik darajasini belgilayadi. Misol uchun, opacity: 0.5; obyekt yarimurchak opak bo'ladi.
+
+Obyektning chegarasini (animation-timing-function): Animatsiya davom etishida obyektning chegarasini belgilayadi. Misol uchun, animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); obyektning tezlanish va yavaşlanish parametrlarini belgilaydi.
+
+Obyektdagi pozitsiyani (animation-transform): Animatsiya davom etishida obyektning pozitsiyasini belgilayadi. Misol uchun, animation-transform: translateX(100px); obyekt yatay oqimda 100 pikselga ko'chiriladi.
+
+Obyektning boshlang'ich joyi (animation-start-value): Animatsiya boshlanishida obyektning boshlang'ich joyini belgilayadi. Misol uchun, animation-start-value: transform: rotate(0deg); obyekt boshlanishida 0 darajada aylantiriladi.
+Obyektning pozitsiyasini o'zgartirish (animation-translate): Animatsiya davomida obyektning pozitsiyasini o'zgartirish uchun ishlatiladi. Misol uchun, animation-translate: translateX(100px) translateY(-50px); obyekt yatay oqimda 100 pikselga o'ngga va vertikal oqimda 50 pikselga yuqoriga ko'chiriladi.
+
+Obyektning o'lchamini o'zgartirish (animation-scale): Animatsiya davomida obyektning o'lchamini o'zgartirish uchun ishlatiladi. Misol uchun, animation-scale: scale(1.5); obyektning o'lchami 1.5 marta kattalashtiriladi.
+
+Obyektning aylanish (animation-rotate): Animatsiya davomida obyektning aylanishini belgilaydi. Misol uchun, animation-rotate: rotate(45deg); obyekt 45 daraja aylantiriladi.
+
+Obyektning fon rangini o'zgartirish (animation-background-color): Animatsiya davomida obyektning fon rangini o'zgartirish uchun ishlatiladi. Misol uchun, animation-background-color: #ff0000; obyektning fon rangi oqilgandan qizilga o'zgaradi.
+
+Obyektning konturini o'zgartirish (animation-border): Animatsiya davomida obyektning konturini o'zgartirish uchun ishlatiladi. Misol uchun, animation-border: 2px solid blue; obyektning konturi 2 piksel kengligida keng qora rangda chiziladi.
+Obyektning deformatsiyasi (animation-transform-origin): Animatsiya davomida obyektning deformatsiyasi uchun ishlatiladi. Misol uchun, animation-transform-origin: center center; obyektning o'rtasidan deformatsiya boshlanadi.
+
+Animatsiya uchun kalit so'z (animation-keyframes): Animatsiya davom etishi uchun kalit so'zlar (keyframes) belgilashda ishlatiladi. Misol uchun, animatsiyani boshidan oxirigacha harmonik o'zgarish bilan tasvirlovchi kalit so'zlar:
+
+css
+Copy
+@keyframes harmonic-animation {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+Obyektning zindex qiymati (animation-z-index): Animatsiya davomida obyektning z-index qiymatini belgilash uchun ishlatiladi. Misol uchun, animation-z-index: 10; obyekt animatsiya davomida boshqa elementlardan yuqori joylashadi.
+
+Obyektning 3D aylanishi (animation-perspective): Animatsiya davomida obyektning 3D aylanishini belgilash uchun ishlatiladi. Misol uchun, animation-perspective: 1000px; obyekt 3D aylanishni 1000 piksel masofada ko'rishini ta'minlaydi.
+
+Aralashtirish (animation-delay): Animatsiya boshlanishidagi boshqarish vaqtni belgilaydi. Misol uchun, animation-delay: 1s; animatsiya 1 sekunddan keyin boshlanadi.
+Obyektni o'qib turgan holatda animatsiya (animation-play-state): Animatsiya boshqa holatda o'qib turishini belgilaydi. Misol uchun, animation-play-state: paused; animatsiya to'xtatilgan, animation-play-state: running; animatsiya davom etmoqda.
+
+Obyektni aylantirish markazi (animation-transform-origin): Animatsiya davomida obyektning aylanish markazini belgilaydi. Misol uchun, animation-transform-origin: center center; obyekt aylanish markazida aylanadi.
+
+Animatsiya davom etish vaqti (animation-duration): Animatsiya davom etish vaqtni belgilaydi. Misol uchun, animation-duration: 3s; animatsiya 3 sekund davom etadi.
+
+Animatsiya boshlanish tartibi (animation-direction): Animatsiya boshlanish tartibini belgilaydi. Misol uchun, animation-direction: alternate; animatsiya o'zgartirish yo'nalishida boshlanadi, keyin orqaga qaytib boshlanadi.
+
+Animatsiya o'zgarish tezligi (animation-timing-function): Animatsiya o'zgarish tezligini belgilaydi. Misol uchun, animation-timing-function: ease-in-out; animatsiya boshlang'ichida tezlanadi, keyin esa yavaşlayadi.
+Obyektning opasiti (opacity) o'zgarishi: Animatsiya davomida obyektning opasitisi (prozrachnost) o'zgarishi uchun foydalaniladi. Misol uchun, opacity: 0; obyekt animatsiya davomida ko'rinmas bo'ladi va opacity: 1; obyektning opasitisi 1 ga oshadi.
+
+Obyektning o'lchami (width, height) o'zgarishi: Animatsiya davomida obyektning o'lchami o'zgarishi uchun foydalaniladi. Misol uchun, width: 0; obyekt animatsiya davomida kengayib ketmaydi va width: 200px; obyektning kengligi 200 pikselga oshadi.
+
+Obyektning fon rangining o'zgarishi (background-color): Animatsiya davomida obyektning fon rangining o'zgarishi uchun foydalaniladi. Misol uchun, background-color: red; obyektning fon rangi qizilga o'zgaradi.
+
+Obyektni o'girish (transform: scale()): Animatsiya davomida obyektni o'lchamini o'zgartirish uchun foydalaniladi. Misol uchun, transform: scale(2); obyekt 2 marta kattalashtiriladi.
+
+Obyektning pozitsiyasini o'zgartirish (top, left, right, bottom): Animatsiya davomida obyektning pozitsiyasini o'zgartirish uchun foydalaniladi. Misol uchun, top: 0; obyekt yuqoriga ko'chiriladi va left: 100px; obyekt o'ngga 100 pikselga ko'chiriladi.
+Obyektning pozitsiyasini o'zgartirish (transform: translate()): Animatsiya davomida obyektning pozitsiyasini o'zgartirish uchun foydalaniladi. Misol uchun, transform: translateX(100px); obyekt o'ngga 100 pikselga ko'chiriladi.
+
+Obyektning o'zining orqasini o'zgartirish (transform: rotate()): Animatsiya davomida obyektning o'zining orqasini o'zgartirish uchun foydalaniladi. Misol uchun, transform: rotate(45deg); obyekt 45 gradusga aylantiriladi.
+
+Obyektning kesishmasi (transform: skew()): Animatsiya davomida obyektning kesishmasini o'zgartirish uchun foydalaniladi. Misol uchun, transform: skewX(20deg); obyekt x-tepaylikda 20 gradusga kesib o'tadi.
+
+Obyektning qaytish effekti (transform: rotateY()): Animatsiya davomida obyektning y o'qi bo'yicha qaytish effektini yaratish uchun foydalaniladi. Misol uchun, transform: rotateY(180deg); obyekt 180 gradusga y o'qi bo'yicha qaytadi.
+
+Obyektning shaklini o'zgartirish (border-radius): Animatsiya davomida obyektning shaklini o'zgartirish uchun foydalaniladi. Misol uchun, border-radius: 50%; obyekt yuvarlak shaklga o'zgaradi.
+Obyektning arqa fonu (background-image) o'zgarishi: Animatsiya davomida obyektning arqa fon rasmidagi o'zgarishlarni belgilash uchun foydalaniladi. Misol uchun, background-image: url(image.jpg); obyektning arqa fon rasmi animatsiya davomida o'zgaradi.
+
+Obyektning ikonasi (content) o'zgarishi: Animatsiya davomida obyektning ikonasidagi matn yoki simvollar o'zgarishi uchun foydalaniladi. Misol uchun, content: "✓"; obyektning ikonasi animatsiya davomida o'zgaradi.
+
+Obyektning yo'nalishi (transform: translate()): Animatsiya davomida obyektning yo'nalishini o'zgartirish uchun foydalaniladi. Misol uchun, transform: translateX(100px) translateY(50px); obyekt o'ngga 100 pikselga va pastga 50 pikselga ko'chiriladi.
+
+Obyektning so'nggi holatini saqlash (animation-fill-mode): Animatsiya tugaganida obyektning so'nggi holatini saqlash uchun foydalaniladi. Misol uchun, animation-fill-mode: forwards; animatsiya tugaganida obyektning oxirgi holatini saqlaydi.
+
+Obyektning animatsiya ustunligi (animation-iteration-count): Animatsiya qaytarishlarining sonini belgilash uchun foydalaniladi. Misol uchun, animation-iteration-count: 3; animatsiya 3 marta takrorlanadi.
+Obyektning shaklini o'zgartirish (transform: scale()): Animatsiya davomida obyektning shaklini o'zgartirish uchun foydalaniladi. Misol uchun, transform: scale(1.5); obyekt 1.5 marta kattalashtiriladi.
+
+Obyektning pozitsiyasini o'zgartirish (position, top, left, right, bottom): Animatsiya davomida obyektning pozitsiyasini o'zgartirish uchun foydalaniladi. Misol uchun, position: absolute; top: 100px; obyekt 100 piksel yuqoriga ko'chiriladi.
+
+Obyektning fon rangining o'zgarishi (background-color): Animatsiya davomida obyektning fon rangining o'zgarishi uchun foydalaniladi. Misol uchun, background-color: blue; obyektning fon rangi kuyiladi.
+
+Obyektni o'zining orqasini o'zgartirish (transform: rotate()): Animatsiya davomida obyektning o'zining orqasini o'zgartirish uchun foydalaniladi. Misol uchun, transform: rotate(90deg); obyekt 90 gradusga aylantiriladi.
+
+Obyektning yorqinligini (box-shadow) o'zgartirish: Animatsiya davomida obyektning yorqinligini o'zgartirish uchun foydalaniladi. Misol uchun, box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); obyektning yorqinligi o'zgaradi.
+Obyektning qaytish effekti (transform: rotateZ()): Animatsiya davomida obyektning z o'qi bo'yicha qaytish effektini yaratish uchun foydalaniladi. Misol uchun, transform: rotateZ(45deg); obyekt 45 gradusga z o'qi bo'yicha qaytadi.
+
+Obyektning yo'qolishi (transform: skew()): Animatsiya davomida obyektning yo'qolishini o'zgartirish uchun foydalaniladi. Misol uchun, transform: skewY(20deg); obyekt y-tepaylikda 20 gradusga yo'qoladi.
+
+Obyektning shaklini o'zgartirish (border-radius): Animatsiya davomida obyektning shaklini o'zgartirish uchun foydalaniladi. Misol uchun, border-radius: 50%; obyekt yuvarlak shaklga o'zgaradi.
+
+Obyektning chizig'i (border-width) o'zgarishi: Animatsiya davomida obyektning chizig'i o'zgarishi uchun foydalaniladi. Misol uchun, border-width: 2px; obyektning chizig'i 2 pikselga o'zgaradi.
+
+Obyektning fon rasmining o'zgarishi (background-image): Animatsiya davomida obyektning fon rasmini o'zgartirish uchun foydalaniladi. Misol uchun, background-image: url(image.jpg); obyektning fon rasmi animatsiya davomida o'zgaradi.
+Obyektning o'zining o'lchamini o'zgartirish (width, height): Animatsiya davomida obyektning o'lchamini o'zgartirish uchun foydalaniladi. Misol uchun, width: 200px; obyektning kengligi 200 pikselga o'zgaradi.
+
+Obyektning o'zining o'lchami orqali qaytarish (transform: scale()): Animatsiya davomida obyektning o'lchami orqali qaytarish effektini yaratish uchun foydalaniladi. Misol uchun, transform: scale(1.5); obyekt 1.5 marta kattalashtiriladi.
+
+Obyektning yorqinligini o'zgartirish (opacity): Animatsiya davomida obyektning yorqinligini o'zgartirish uchun foydalaniladi. Misol uchun, opacity: 0.5; obyekt yorqinligi 0.5 ga o'zgaradi, ya'ni yorug'lik darajasi kamayadi.
+
+Obyektning pozitsiyasini o'zgartirish (top, left, right, bottom): Animatsiya davomida obyektning pozitsiyasini o'zgartirish uchun foydalaniladi. Misol uchun, top: 50px; obyekt 50 piksel yuqoriga ko'chiriladi.
+
+Obyektning fon rangining o'zgarishi (background-color): Animatsiya davomida obyektning fon rangini o'zgartirish uchun foydalaniladi. Misol uchun, background-color: red; obyektning fon rangi qizilga o'zgaradi.
+Obyektning yo'nalishi (transform: rotate()): Animatsiya davomida obyektning yo'nalishini o'zgartirish uchun foydalaniladi. Misol uchun, transform: rotate(45deg); obyekt 45 gradusga aylantiriladi.
+
+Obyektning pozitsiyasini o'zgartirish (position, top, left, right, bottom): Animatsiya davomida obyektning pozitsiyasini o'zgartirish uchun foydalaniladi. Misol uchun, position: absolute; top: 100px; obyekt 100 piksel yuqoriga ko'chiriladi.
+
+Obyektning o'lchamini o'zgartirish (width, height): Animatsiya davomida obyektning o'lchamini o'zgartirish uchun foydalaniladi. Misol uchun, width: 300px; obyektning kengligi 300 pikselga o'zgaradi.
+
+Obyektning chizig'i (border-width) o'zgarishi: Animatsiya davomida obyektning chizig'i o'zgarishi uchun foydalaniladi. Misol uchun, border-width: 2px; obyektning chizig'i 2 pikselga o'zgaradi.
+
+Obyektning fon rasmi (background-image) o'zgarishi: Animatsiya davomida obyektning fon rasmidagi o'zgarishlarni belgilash uchun foydalaniladi. Misol uchun, background-image: url(image.jpg); obyektning fon rasmi animatsiya davomida o'zgaradi.
+Obyektning fon rangining o'zgarishi (background-color): Animatsiya davomida obyektning fon rangini o'zgartirish uchun foydalaniladi. Misol uchun, background-color: blue; obyektning fon rangi kuyiladi.
+
+Obyektning yo'qolishi (transform: skew()): Animatsiya davomida obyektning yo'qolishini o'zgartirish uchun foydalaniladi. Misol uchun, transform: skewX(20deg); obyekt x-tepaylikda 20 gradusga yo'qoladi.
+
+Obyektning yorqinligini o'zgartirish (opacity): Animatsiya davomida obyektning yorqinligini o'zgartirish uchun foydalaniladi. Misol uchun, opacity: 0.5; obyekt yorqinligi 0.5 ga o'zgaradi, ya'ni yorug'lik darajasi kamayadi.
+
+Obyektning pozitsiyasini o'zgartirish (top, left, right, bottom): Animatsiya davomida obyektning pozitsiyasini o'zgartirish uchun foydalaniladi. Misol uchun, top: 100px; obyekt 100 piksel yuqoriga ko'chiriladi.
+
+Obyektning o'lchamini o'zgartirish (width, height): Animatsiya davomida obyektning o'lchamini o'zgartirish uchun foydalaniladi. Misol uchun, width: 200px; obyektning kengligi 200 pikselga o'zgaradi.
+Obyektning pozitsiyasini o'zgartirish (position, top, left, right, bottom): Animatsiya davomida obyektning pozitsiyasini o'zgartirish uchun foydalaniladi. Misol uchun, position: absolute; top: 50%; obyekt 50% yuqoriga ko'chiriladi.
+
+Obyektning kattalashtirish (transform: scale()): Animatsiya davomida obyektning kattalashtirish effektini yaratish uchun foydalaniladi. Misol uchun, transform: scale(1.2); obyekt 1.2 marta kattalashtiriladi.
+
+Obyektning yo'nalishi (transform: rotate()): Animatsiya davomida obyektning yo'nalishini o'zgartirish uchun foydalaniladi. Misol uchun, transform: rotate(90deg); obyekt 90 gradusga aylantiriladi.
+
+Obyektning yo'qolishi (transform: skew()): Animatsiya davomida obyektning yo'qolishini o'zgartirish uchun foydalaniladi. Misol uchun, transform: skewY(-20deg); obyekt y-tepaylikda 20 gradusga yo'qoladi.
+
+Obyektning fondagi gradient rangi (background-image): Animatsiya davomida obyektning fonida gradient ranglarni belgilash uchun foydalaniladi. Misol uchun, background-image: linear-gradient(to right, red, yellow); obyektning fonida o'ngga tomon gradient rangi yaratiladi.
+Obyektning fon rasmi (background-image): Animatsiya davomida obyektning fonida rasmlarni o'zgartirish uchun foydalaniladi. Misol uchun, background-image: url(image.jpg); obyektning fon rasmi o'zgaradi.
+
+Obyektning fon animatsiyasi (background-position): Animatsiya davomida obyektning fonining pozitsiyasini o'zgartirish uchun foydalaniladi. Misol uchun, background-position: 50% 50%; obyektning fon rasmi markazga o'rnatiladi.
+
+Obyektning chizig'i (border-width): Animatsiya davomida obyektning chizig'i o'zgartirish uchun foydalaniladi. Misol uchun, border-width: 2px; obyektning chizig'i 2 piksellik bo'ladi.
+
+Obyektning chegaralari (border-radius): Animatsiya davomida obyektning chegaralarini o'zgartirish uchun foydalaniladi. Misol uchun, border-radius: 50%; obyektning chegaralari yuvarlak bo'ladi.
+
+Obyektning yo'nalishi (transform: rotate()): Animatsiya davomida obyektning yo'nalishini o'zgartirish uchun foydalaniladi. Misol uchun, transform: rotate(45deg); obyekt 45 gradusga aylantiriladi.
+Obyektning yorqinligini o'zgartirish (opacity): Animatsiya davomida obyektning yorqinligini o'zgartirish uchun foydalaniladi. Misol uchun, opacity: 0.5; obyekt yorqinligi 0.5 ga o'zgaradi, ya'ni yorug'lik darajasi kamayadi.
+
+Obyektning pozitsiyasini o'zgartirish (position, top, left, right, bottom): Animatsiya davomida obyektning pozitsiyasini o'zgartirish uchun foydalaniladi. Misol uchun, position: absolute; top: 100px; obyekt 100 piksel yuqoriga ko'chiriladi.
+
+Obyektning o'lchamini o'zgartirish (width, height): Animatsiya davomida obyektning o'lchamini o'zgartirish uchun foydalaniladi. Misol uchun, width: 300px; obyektning kengligi 300 pikselga o'zgaradi.
+
+Obyektning fon rangini o'zgartirish (background-color): Animatsiya davomida obyektning fon rangini o'zgartirish uchun foydalaniladi. Misol uchun, background-color: blue; obyektning fon rangi kuyiladi.
+
+Obyektning yo'nalishini o'zgartirish (transform: rotate()): Animatsiya davomida obyektning yo'nalishini o'zgartirish uchun foydalaniladi. Misol uchun, transform: rotate(90deg); obyekt 90 gradusga aylantiriladi.
+Obyektning fon rasmi (background-image): Animatsiya davomida obyektning fonda rasmlarni o'zgartirish uchun foydalaniladi.
+
+Obyektning yo'qolishi (transform: translate()): Animatsiya davomida obyektning yo'qolishini o'zgartirish uchun foydalaniladi.
+
+Obyektning kattalashtirish (transform: scale()): Animatsiya davomida obyektning kattalashtirish effektini yaratish uchun foydalaniladi.
+
+Obyektning chizig'i (border-width): Animatsiya davomida obyektning chizig'ini o'zgartirish uchun foydalaniladi.
+
+Obyektning chegaralari (border-radius): Animatsiya davomida obyektning chegaralarini o'zgartirish uchun foydalaniladi.
+
+Obyektning fon rangining o'zgarishi (background-color): Animatsiya davomida obyektning fon rangini o'zgartirish uchun foydalaniladi.
+
+Obyektning yo'nalishi (transform: rotate()): Animatsiya davomida obyektning yo'nalishini o'zgartirish uchun foydalaniladi.
+
+Obyektning pozitsiyasini o'zgartirish (position, top, left, right, bottom): Animatsiya davomida obyektning pozitsiyasini o'zgartirish uchun foydalaniladi.
+
+Obyektning o'lchamini o'zgartirish (width, height): Animatsiya davomida obyektning o'lchamini o'zgartirish uchun foydalaniladi.
+
+Obyektning yorqinligini o'zgartirish (opacity): Animatsiya davomida obyektning yorqinligini o'zgartirish uchun foydalaniladi.
+
+Obyektning fon animatsiyasi (background-position): Animatsiya davomida obyektning fonining pozitsiyasini o'zgartirish uchun foydalaniladi.
+
+Obyektning yo'qolishini o'zgartirish (transform: skew()): Animatsiya davomida obyektning yo'qolishini o'zgartirish uchun foydalaniladi.
+
+Obyektlarni katta-juda kichraytirish (@keyframes): Animatsiya davomida obyektlarni katta-juda kichraytirish uchun @keyframes atamasi bilan foydalaniladi.
+
+Obyektlarni olib tashlash (transform: translate()): Animatsiya davomida obyektlarni olib tashlash uchun transform: translate() xususiyatidan foydalaniladi.
+
+Obyektning fon gradienti (background-image): Animatsiya davomida obyektning fonida gradient ranglarni belgilash uchun foydalaniladi.
